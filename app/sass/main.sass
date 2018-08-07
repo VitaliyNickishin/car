@@ -11,11 +11,11 @@ ul
 	list-style: none
 
 body
- font-family: 'Yantramanav', sans-serif
+ font-family: 'PT Sans', sans-serif
  font-size: 16px
- font-weight: 300
+ font-weight: 400
  color: $body-text
-
+ background: #fff
 input, button
  outline: none
  border: 0
@@ -23,20 +23,101 @@ input, button
 a
 	text-decoration: none
 
-.stanrdart /*общее для секций*/
-	max-width: 1280px
+.main /*монтажная область*/
+	max-width: 1170px
 	height: auto
  position: relative
  margin: 0 auto
+ 
+ &-title /*шапка*/
+  background: $bg-header
+  text-align: center
+  height: 90px
+  &__icon
+   display: inline-block
+   img
+  h1
+  	//font-size: 29pt
+  	font-weight: 700
+  	display: inline-block
+   margin-left: 20px
+.model /*блок с классами автомобилей*/
+	padding-top: 85px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	&-class /*класс автомобилей*/
+		width: 390px
+		height: 390px
+		text-transform: uppercase
+		//background: #666
+		text-align: center
+		&__title
+			background: $bg-class
+			width: 210px
+			//height: 33px
+			margin: 0 auto
+			//font-size: 22px
+	 &__car
+	 	width: 390px
+		 img
+		 	width: 100%
+		 	display: block
+		 	margin: 54px 0
+		&__price
+			background: $bg-price
+			width: 315px
+			//height: 33px
+			font-size: 22px
+			font-weight: 700
+			margin: 0 auto
+
+.showcase
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	&-car
+		img
+			display: block
+
+	&-nav
+		.drop
+
+.content
+	color: $bg-price
+	font-weight: 700
+	&__text
+		display: block
+		border-bottom: 1px solid #000
+		width: 270px
+		font-size: 22px
+	&__price
+		font-weight: 400
+		color: $bg-class
+		display: inline-block
+		font-size: 16px
+		span
+			font-size: 18px
+   color: $bg-price
+   font-weight: 700
+   margin-left: 50px
+	&__call
+		margin-left: 50px
+		padding: 10px 40px
+		display: inline-block
+		background: $bg-class
+		text-transform: uppercase
+		font-size: 22px
+		a
+		 color: $body-text
+   display: block
+		
 
 
 
 
 
-
-
-
-
-
-
-@import "media" //интегрируем медиа запросы
