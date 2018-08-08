@@ -79,6 +79,43 @@ a {
   display: flex; }
   .showcase-car img {
     display: block; }
+  .showcase-nav {
+    margin-left: 230px;
+    border-left: 1px solid #000;
+    text-transform: uppercase; }
+
+.menu li {
+  width: 188px;
+  margin-left: -8px;
+  position: relative; }
+  .menu li a {
+    display: block;
+    padding: 10px 0 10px 23px; }
+    .menu li a:before {
+      content: "";
+      position: absolute;
+      border: 20px solid #eb5346;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 20px solid transparent;
+      top: 0;
+      left: -40px;
+      display: none; }
+    .menu li a:hover:before {
+      display: block; }
+    .menu li a:hover {
+      display: block;
+      color: #fff;
+      background: #eb5346; }
+
+.menu-sub li a {
+  font-size: 14px;
+  padding-left: 40px; }
+
+#go {
+  display: none; }
+  #go:checked ~ .menu-sub {
+    display: block; }
 
 .content {
   color: #eb5346;
