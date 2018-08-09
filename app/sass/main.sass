@@ -82,18 +82,22 @@ a
 	display: flex
 	&-car
 		img
-			display: block
+			//display: block
 
 	&-nav
 		margin-left: 230px
 		border-left: 1px solid #000
 		text-transform: uppercase
+
 .menu
 	li
 		width: 188px
 		//height: 30px
 		margin-left: -8px
 		position: relative
+		input
+			display: none
+
 		a
 			display: block
 			padding: 10px 0 10px 23px
@@ -113,22 +117,80 @@ a
 				display: block
 				color: $body-text
 				background: $bg-price
-			//&:hover:last-child
-			//&:hover:nth-last-child
-			 //background: $bg-class	
+		.toggleSubmenu /*label*/
+			display: none
+   i /*иконка угол вниз*/
+   	position: absolute
+    top: 10px
+   	right: 15px
+   	font-size: 22px
 	&-sub
-		//display: none
+		position: absolute
+		display: none
 		li
+			margin-left: 0px
 			a
 				font-size: 14px
 				padding-left: 40px
-#go
-	display: none
-	&:checked ~ .menu-sub
-		display: block
+input.toggleSubmenu:checked ~ .menu-sub
+	display: block			
+ position: relative
+.menu label.toggleSubmenu
+ position: absolute
+ top: 0
+ right: 0
+ width: 100%
+ height: 100%
+ cursor: pointer
+ display: block
+input.toggleSubmenu:checked ~ a
+ background: $bg-class
+ color: $body-text
+input.toggleSubmenu:hover ~ a
+ background: $bg-class
+ color: $body-text
 
+.package-min
+ display: none
+.package-standart
+ display: none
+.package-standart-plus
+ display: none
+.package-standart-2plus
+ display: none
+.package-standart-3plus
+ display: none
+
+
+.package
+	&-list
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		margin-left: 15px
+		&__item
+			width: 70px
+			text-align: center
+			margin-right: 30px
+			&-img
+				height: 42px
+				//align-items: center
+				display: table-cell
+				vertical-align: middle
+				img
+					width: 100%
+			p
+				margin-top: 15px
+				font-size: 12px
+				color: $bg-price
+
+#min:checked .package-min
+	display: block
 
 .content
+	margin-left: 85px
 	color: $bg-price
 	font-weight: 700
 	&__text
