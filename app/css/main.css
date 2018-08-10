@@ -86,11 +86,10 @@ a {
   width: 188px;
   margin-left: -8px;
   position: relative; }
-  .menu li input {
-    display: none; }
   .menu li a {
     display: block;
-    padding: 10px 0 10px 23px; }
+    padding: 10px 0 10px 23px;
+    color: #252e39; }
     .menu li a:before {
       content: "";
       position: absolute;
@@ -122,9 +121,9 @@ a {
     margin-left: 0px; }
     .menu-sub li a {
       font-size: 14px;
-      padding-left: 40px; }
+      padding: 11px 0 11px 40px; }
 
-input.toggleSubmenu:checked ~ .menu-sub {
+input:checked ~ .menu-sub {
   display: block;
   position: relative; }
 
@@ -137,11 +136,11 @@ input.toggleSubmenu:checked ~ .menu-sub {
   cursor: pointer;
   display: block; }
 
-input.toggleSubmenu:checked ~ a {
+input:checked ~ a {
   background: #252e39;
   color: #fff; }
 
-input.toggleSubmenu:hover ~ a {
+input:hover ~ a {
   background: #252e39;
   color: #fff; }
 
@@ -183,9 +182,6 @@ input.toggleSubmenu:hover ~ a {
       margin-top: 15px;
       font-size: 12px;
       color: #eb5346; }
-
-#min:checked .package-min {
-  display: block; }
 
 .content {
   margin-left: 85px;

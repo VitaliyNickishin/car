@@ -92,15 +92,12 @@ a
 .menu
 	li
 		width: 188px
-		//height: 30px
 		margin-left: -8px
 		position: relative
-		input
-			display: none
-
 		a
 			display: block
 			padding: 10px 0 10px 23px
+			color: $bg-class
 			&:before /*указатель*/
 				content: ""
 				position: absolute
@@ -117,6 +114,7 @@ a
 				display: block
 				color: $body-text
 				background: $bg-price
+			
 		.toggleSubmenu /*label*/
 			display: none
    i /*иконка угол вниз*/
@@ -131,8 +129,8 @@ a
 			margin-left: 0px
 			a
 				font-size: 14px
-				padding-left: 40px
-input.toggleSubmenu:checked ~ .menu-sub
+				padding: 11px 0 11px 40px
+input:checked ~ .menu-sub
 	display: block			
  position: relative
 .menu label.toggleSubmenu
@@ -143,12 +141,14 @@ input.toggleSubmenu:checked ~ .menu-sub
  height: 100%
  cursor: pointer
  display: block
-input.toggleSubmenu:checked ~ a
+input:checked ~ a
  background: $bg-class
  color: $body-text
-input.toggleSubmenu:hover ~ a
+input:hover ~ a
  background: $bg-class
  color: $body-text
+
+
 
 .package-min
  display: none
@@ -186,8 +186,6 @@ input.toggleSubmenu:hover ~ a
 				font-size: 12px
 				color: $bg-price
 
-#min:checked .package-min
-	display: block
 
 .content
 	margin-left: 85px
