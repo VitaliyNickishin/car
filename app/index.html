@@ -13,11 +13,19 @@
 
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="css/main.css">
-	<script type="text/javascript"> 
-		function car_selection (a) { 
- 		document.car.src=a 
+	
+ <script type="text/javascript"> 
+  function mini (a) { 
+   document.citroen.src=a 
+  }  
+  function medium (a) { 
+   document.mazda.src=a 
+  } 
+		function premium (a) { 
+ 		document.mercedes.src=a 
 		} 
 	</script>
+
 </head>
 
 <body>
@@ -33,10 +41,10 @@
 		</div><!-- /.main-title -->
 
   <div class="model">
-  	<!-- 1 блок -->
+  	<!-- 1 блок Класс mini*-->
   	<div class="model-class">
-  		<div class="model-class__title">
-  			<h2>Класс mini*</h2>
+  		<div class="model-class__title" id="mini">
+  			<a href="#">Класс mini*</a>
   		</div><!-- /.model-class__title -->
   		<div class="model-class__car">
   			<img src="img/citroen/clean.jpg" alt="citroen">
@@ -45,11 +53,11 @@
   			<a href="#">Расчитать стоимость</a>
   		</div><!-- /.model-class__price -->
   	</div><!-- /.model-class -->
-   
-  	<!-- 2 блок -->
+
+  	<!-- 2 блок Средний класс*-->
   	<div class="model-class">
-  		<div class="model-class__title">
-  			<h2>Средний класс*</h2>
+  		<div class="model-class__title" id="medium">
+  			<a href="#">Средний класс*</a>
   		</div><!-- /.model-class__title -->
   		<div class="model-class__car">
   			<img src="img/mazda/clean.jpg" alt="mazda">
@@ -58,10 +66,11 @@
   			<a href="#">Расчитать стоимость</a>
   		</div><!-- /.model-class__price -->
   	</div><!-- /.model-class -->
-  	<!-- 3 блок -->
+
+  	<!-- 3 блок Премиум класс*-->
   	<div class="model-class">
-  		<div class="model-class__title">
-  			<h2>Премиум класс*</h2>
+  		<div class="model-class__title" id="premium">
+  			<a href="#">Премиум класс*</a>
   		</div><!-- /.model-class__title -->
   		<div class="model-class__car">
   			<img src="img/mercedes/clean.jpg" alt="mercedes">
@@ -73,9 +82,637 @@
   	</div><!-- /.model-class -->
   </div><!-- /.model -->
 
-  <div class="showcase">
+   <!-- citroen -->
+
+  <div class="showcase showcase-citroen">
+   <div class="showcase-car">
+    <img src="img/citroen/standart++.jpg" alt="standart++" name="citroen">
+    
+    <!-- Минимальный пакет -->
+
+    <div class="package-min package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/thresholds.png" alt="thresholds">
+       </div><!-- /.package-list__item-img -->
+        <p>пороги внутренние</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/door.png" alt="door">
+       </div><!-- /.package-list__item-img -->
+        <p>торцы дверей</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/rear-bumper.png" alt="rear-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>полка заднего бампера</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-min -->
+    
+    <!-- Cтандарт пакет -->
+
+    <div class="package-standart package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood-front.png" alt="hood-front">
+       </div><!-- /.package-list__item-img -->
+        <p>часть капота</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing-front.png" alt="wing-front">
+       </div><!-- /.package-list__item-img -->
+        <p>часть крыльев</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart -->
+
+   <!-- Cтандарт+ пакет -->
+
+    <div class="package-standart-plus package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood.png" alt="hood">
+       </div><!-- /.package-list__item-img -->
+        <p>капот полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing-front.png" alt="wing-front">
+       </div><!-- /.package-list__item-img -->
+        <p>часть крыльев</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart-plus -->
+
+   <!-- Cтандарт++ пакет -->
+
+    <div class="package-standart-2plus package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood.png" alt="hood">
+       </div><!-- /.package-list__item-img -->
+        <p>капот полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing.png" alt="wing">
+       </div><!-- /.package-list__item-img -->
+        <p>крылья полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart-2plus -->
+
+   <!-- Cтандарт+++ пакет -->
+
+    <div class="package-standart-3plus package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood.png" alt="hood">
+       </div><!-- /.package-list__item-img -->
+        <p>капот полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing.png" alt="wing">
+       </div><!-- /.package-list__item-img -->
+        <p>крылья полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/rear-bumper.png" alt="rear-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>задний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart-3plus -->
+
+   
+   </div><!-- /.showcase-car -->
+  
+   <!-- Навингация выбора пакета -->
+
+   <nav class="showcase-nav">
+    <ul class="menu">
+     <li><a href="javascript:mini ('img/citroen/min.jpg')" id="min">Минимальный</a></li>
+     <li><a href="javascript:mini ('img/citroen/standart.jpg')" id="standart">Стандарт</a></li>
+     <li><a href="javascript:mini ('img/citroen/standart+.jpg')" id="standart-plus">Стандарт+</a></li>
+     <li><a href="javascript:mini ('img/citroen/standart++.jpg')" id="standart-2plus">Стандарт++</a></li>
+     <li><a href="javascript:mini ('img/citroen/standart+++.jpg')" id="standart-3plus">Стандарт+++</a></li>
+     <li><a href="javascript:mini ('img/citroen/whole.jpg')">Целиком</a></li>
+     <li>
+      <input type="checkbox" id="sub">
+      <a href="#">Частями</a>
+       <label for="sub"><i class="fas fa-angle-down"></i></label>
+      <ul class="menu-sub">
+       <li><a href="javascript:mini ('img/citroen/optics.jpg')">Оптика</a></li>
+       <li><a href="javascript:mini ('img/citroen/thresholds-internal.jpg')">Пороги внутренние</a></li>
+       <li><a href="javascript:mini ('img/citroen/thresholds-external.jpg')">Пороги наружные</a></li>
+       <li><a href="javascript:mini ('img/citroen/door.jpg')">Двери (4шт.)</a></li>
+       <li><a href="javascript:mini ('img/citroen/back-wing.jpg')">Задние крылья</a></li>
+       <li><a href="javascript:mini ('img/citroen/hood.jpg')">Капот</a></li>
+       <li><a href="javascript:mini ('img/citroen/front-bumper.jpg')">Передний бампер</a></li>
+       <li><a href="javascript:mini ('img/citroen/rear-bumper.jpg')">Задний бампер</a></li>
+      </ul><!-- /.menu-sub -->
+     </li>
+    </ul><!-- /.menu -->
+   </nav><!-- /.showcase-nav -->
+  </div><!-- /.showcase showcase-citroen-->
+
+   <!-- mazda -->
+
+  <div class="showcase showcase-mazda">
+   <div class="showcase-car">
+    <img src="img/mazda/standart++.jpg" alt="standart++" name="mazda">
+    
+    <!-- Минимальный пакет -->
+
+    <div class="package-min package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/thresholds.png" alt="thresholds">
+       </div><!-- /.package-list__item-img -->
+        <p>пороги внутренние</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/door.png" alt="door">
+       </div><!-- /.package-list__item-img -->
+        <p>торцы дверей</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/rear-bumper.png" alt="rear-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>полка заднего бампера</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-min -->
+    
+    <!-- Cтандарт пакет -->
+
+    <div class="package-standart package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood-front.png" alt="hood-front">
+       </div><!-- /.package-list__item-img -->
+        <p>часть капота</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing-front.png" alt="wing-front">
+       </div><!-- /.package-list__item-img -->
+        <p>часть крыльев</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart -->
+
+   <!-- Cтандарт+ пакет -->
+
+    <div class="package-standart-plus package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood.png" alt="hood">
+       </div><!-- /.package-list__item-img -->
+        <p>капот полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing-front.png" alt="wing-front">
+       </div><!-- /.package-list__item-img -->
+        <p>часть крыльев</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart-plus -->
+
+   <!-- Cтандарт++ пакет -->
+
+    <div class="package-standart-2plus package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood.png" alt="hood">
+       </div><!-- /.package-list__item-img -->
+        <p>капот полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing.png" alt="wing">
+       </div><!-- /.package-list__item-img -->
+        <p>крылья полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart-2plus -->
+
+   <!-- Cтандарт+++ пакет -->
+
+    <div class="package-standart-3plus package">
+     <div class="package-list">
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/hood.png" alt="hood">
+       </div><!-- /.package-list__item-img -->
+        <p>капот полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/wing.png" alt="wing">
+       </div><!-- /.package-list__item-img -->
+        <p>крылья полностью</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/rear-bumper.png" alt="rear-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>задний бампер</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/mirror.png" alt="mirror">
+       </div><!-- /.package-list__item-img -->
+        <p>зеркала</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/optics.png" alt="optics">
+       </div><!-- /.package-list__item-img -->
+        <p>фары</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/handle.png" alt="handle">
+       </div><!-- /.package-list__item-img -->
+        <p>ручки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/fog-lights.png" alt="fog-lights">
+       </div><!-- /.package-list__item-img -->
+        <p>противотуманки</p>
+      </div><!-- /.package-list__item -->
+
+      <div class="package-list__item">
+       <div class="package-list__item-img">
+        <img src="img/icons/front-bumper.png" alt="front-bumper">
+       </div><!-- /.package-list__item-img -->
+        <p>передний бампер</p>
+      </div><!-- /.package-list__item -->
+     </div><!-- /.package-list -->
+    </div><!-- /.package-standart-3plus -->
+
+   
+   </div><!-- /.showcase-car -->
+  
+   <!-- Навингация выбора пакета -->
+
+   <nav class="showcase-nav">
+    <ul class="menu">
+     <li><a href="javascript:medium ('img/mazda/min.jpg')" id="min">Минимальный</a></li>
+     <li><a href="javascript:medium ('img/mazda/standart.jpg')" id="standart">Стандарт</a></li>
+     <li><a href="javascript:medium ('img/mazda/standart+.jpg')" id="standart-plus">Стандарт+</a></li>
+     <li><a href="javascript:medium ('img/mazda/standart++.jpg')" id="standart-2plus">Стандарт++</a></li>
+     <li><a href="javascript:medium ('img/mazda/standart+++.jpg')" id="standart-3plus">Стандарт+++</a></li>
+     <li><a href="javascript:medium ('img/mazda/whole.jpg')">Целиком</a></li>
+     <li>
+      <input type="checkbox" id="sub">
+      <a href="#">Частями</a>
+       <label for="sub"><i class="fas fa-angle-down"></i></label>
+      <ul class="menu-sub">
+       <li><a href="javascript:medium ('img/mazda/optics.jpg')">Оптика</a></li>
+       <li><a href="javascript:medium ('img/mazda/thresholds-internal.jpg')">Пороги внутренние</a></li>
+       <li><a href="javascript:medium ('img/mazda/thresholds-external.jpg')">Пороги наружные</a></li>
+       <li><a href="javascript:medium ('img/mazda/door.jpg')">Двери (4шт.)</a></li>
+       <li><a href="javascript:medium ('img/mazda/back-wing.jpg')">Задние крылья</a></li>
+       <li><a href="javascript:medium ('img/mazda/hood.jpg')">Капот</a></li>
+       <li><a href="javascript:medium ('img/mazda/front-bumper.jpg')">Передний бампер</a></li>
+       <li><a href="javascript:medium ('img/mazda/rear-bumper.jpg')">Задний бампер</a></li>
+      </ul><!-- /.menu-sub -->
+     </li>
+    </ul><!-- /.menu -->
+   </nav><!-- /.showcase-nav -->
+  </div><!-- /.showcase showcase-mazda-->
+
+   <!-- mercedes -->
+
+  <div class="showcase showcase-mercedes">
   	<div class="showcase-car">
-  		<img src="img/mercedes/standart++.jpg" alt="standart++" name="car">
+  		<img src="img/mercedes/standart++.jpg" alt="standart++" name="mercedes"">
   	 
   	 <!-- Минимальный пакет -->
 
@@ -352,37 +989,37 @@
   	 	</div><!-- /.package-list -->
   	 </div><!-- /.package-standart-3plus -->
 
-  	 
+  	
   	</div><!-- /.showcase-car -->
-
+  
   	<!-- Навингация выбора пакета -->
 
   	<nav class="showcase-nav">
   		<ul class="menu">
-  			<li><a href="javascript:car_selection ('img/mercedes/min.jpg')" id="min">Минимальный</a></li>
-  			<li><a href="javascript:car_selection ('img/mercedes/standart.jpg')" id="standart">Стандарт</a></li>
-  			<li><a href="javascript:car_selection ('img/mercedes/standart+.jpg')" id="standart-plus">Стандарт+</a></li>
-  			<li><a href="javascript:car_selection ('img/mercedes/standart++.jpg')" id="standart-2plus">Стандарт++</a></li>
-  			<li><a href="javascript:car_selection ('img/mercedes/standart+++.jpg')" id="standart-3plus">Стандарт+++</a></li>
-  			<li><a href="javascript:car_selection ('img/mercedes/whole.jpg')">Целиком</a></li>
+  			<li><a href="javascript:premium ('img/mercedes/min.jpg')" id="min">Минимальный</a></li>
+  			<li><a href="javascript:premium ('img/mercedes/standart.jpg')" id="standart">Стандарт</a></li>
+  			<li><a href="javascript:premium ('img/mercedes/standart+.jpg')" id="standart-plus">Стандарт+</a></li>
+  			<li><a href="javascript:premium ('img/mercedes/standart++.jpg')" id="standart-2plus">Стандарт++</a></li>
+  			<li><a href="javascript:premium ('img/mercedes/standart+++.jpg')" id="standart-3plus">Стандарт+++</a></li>
+  			<li><a href="javascript:premium ('img/mercedes/whole.jpg')">Целиком</a></li>
   			<li>
       <input type="checkbox" id="sub">
   				<a href="#">Частями</a>
   				 <label for="sub"><i class="fas fa-angle-down"></i></label>
       <ul class="menu-sub">
-      	<li><a href="javascript:car_selection ('img/mercedes/optics.jpg')">Оптика</a></li>
-      	<li><a href="javascript:car_selection ('img/mercedes/thresholds-internal.jpg')">Пороги внутренние</a></li>
-      	<li><a href="javascript:car_selection ('img/mercedes/thresholds-external.jpg')">Пороги наружные</a></li>
-      	<li><a href="javascript:car_selection ('img/mercedes/door.jpg')">Двери (4шт.)</a></li>
-      	<li><a href="javascript:car_selection ('img/mercedes/back-wing.jpg')">Задние крылья</a></li>
-      	<li><a href="javascript:car_selection ('img/mercedes/hood.jpg')">Капот</a></li>
-      	<li><a href="javascript:car_selection ('img/mercedes/front-bumper.jpg')">Передний бампер</a></li>
-      	<li><a href="javascript:car_selection ('img/mercedes/rear-bumper.jpg')">Задний бампер</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/optics.jpg')">Оптика</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/thresholds-internal.jpg')">Пороги внутренние</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/thresholds-external.jpg')">Пороги наружные</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/door.jpg')">Двери (4шт.)</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/back-wing.jpg')">Задние крылья</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/hood.jpg')">Капот</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/front-bumper.jpg')">Передний бампер</a></li>
+      	<li><a href="javascript:premium ('img/mercedes/rear-bumper.jpg')">Задний бампер</a></li>
       </ul><!-- /.menu-sub -->
   			</li>
   		</ul><!-- /.menu -->
   	</nav><!-- /.showcase-nav -->
-  </div><!-- /.showcase -->
+  </div><!-- /.showcase showcase-mercedes-->
 
   
   <!-- Стоимость услуг -->
@@ -400,19 +1037,9 @@
     </div><!-- /.content -->
 
 
-
-
-
-
-
-
-
-
-
-
 	</section>
 
   <script src="js/libs.min.js"></script>
 	 <script src="js/main.js"></script> <!---->
-</body>
+ </body>
 </html>

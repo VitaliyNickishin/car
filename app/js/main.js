@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+/*при клике на пакет появляются детали входящие в него*/
 	$(function() {
 	  $('#min').click(function() {
 	    $('.package-min').toggle('slow');
@@ -26,6 +26,28 @@ $(document).ready(function(){
 	    $('.package-standart-3plus').toggle('slow');
 	  });
 	});
+
+
+
+ $('#mini').click(function(){
+
+            $('.showcase-citroen').fadeIn();
+        });
+ $('#medium').click(function(){
+
+            $('.showcase-mazda').fadeIn();
+        });
+ $('#premium').click(function(){
+
+            $('.showcase-mercedes').fadeIn();
+        });
+
+
+
+
+
+
+
 
 
 }); 
