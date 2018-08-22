@@ -47,8 +47,8 @@ a {
   display: -ms-flexbox;
   display: flex; }
   .model-class {
+    margin-bottom: 80px;
     width: 390px;
-    height: 390px;
     text-transform: uppercase;
     text-align: center; }
     .model-class__title {
@@ -66,7 +66,21 @@ a {
       width: 315px;
       font-size: 22px;
       font-weight: 700;
-      margin: 0 auto; }
+      margin: 0 auto;
+      position: relative; }
+      .model-class__price a {
+        display: block;
+        color: #fff;
+        text-decoration: none; }
+
+.arrow {
+  position: absolute;
+  border: 23px solid #eb5346;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  top: 36px;
+  left: 132px; }
 
 .showcase {
   display: -webkit-flex;
@@ -101,15 +115,28 @@ a {
       top: 0;
       left: -40px;
       display: none; }
-    .menu li a:hover:before {
+    .menu li a:focus:before {
       display: block; }
-    .menu li a:hover {
-      display: block;
-      color: #fff;
-      background: #eb5346; }
-  .menu li .toggleSubmenu {
+    .menu li a:focus {
+      background: #eb5346;
+      color: #fff; }
+  .menu li input {
     display: none; }
-    .menu li .toggleSubmenu i {
+    .menu li input:checked ~ .menu-sub {
+      display: block;
+      position: relative; }
+    .menu li input:checked ~ a {
+      background: #252e39;
+      color: #fff; }
+  .menu li label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: block; }
+    .menu li label i {
       position: absolute;
       top: 10px;
       right: 15px;
@@ -118,32 +145,20 @@ a {
 .menu-sub {
   position: absolute;
   display: none; }
+  .menu-sub:before {
+    content: "";
+    position: absolute;
+    border: 20px solid #252e39;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    top: -41px;
+    left: -40px; }
   .menu-sub li {
     margin-left: 0px; }
     .menu-sub li a {
       font-size: 14px;
       padding: 11px 0 11px 40px; }
-
-input:checked ~ .menu-sub {
-  display: block;
-  position: relative; }
-
-.menu label.toggleSubmenu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  display: block; }
-
-input:checked ~ a {
-  background: #252e39;
-  color: #fff; }
-
-input:hover ~ a {
-  background: #252e39;
-  color: #fff; }
 
 .package-min {
   display: none; }
